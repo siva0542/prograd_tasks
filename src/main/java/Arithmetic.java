@@ -1,6 +1,6 @@
-public class Arthimetic {
+public class Arithmetic {
     int num1,num2;
-    public Arthimetic(int num1, int num2) {
+    public Arithmetic(int num1, int num2) {
         this.num1=num1;
         this.num2=num2;
 
@@ -19,6 +19,11 @@ public class Arthimetic {
     }
 
     public int divide() {
-        return num1/num2;
+        try {
+            return num1 / num2;
+        }
+        catch(Exception e){
+            return num2;
+        }
     }
 }
